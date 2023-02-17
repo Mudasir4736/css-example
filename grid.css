@@ -34,11 +34,13 @@
     margin-bottom: 7px;
     background-color: #33b5e5;
     color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transition: 1s;
   }
   
   .menu li:hover {
     background-color: #0099cc;
+    transform: translate(10px,20px);
   }
   
   .aside {
@@ -57,7 +59,28 @@
     font-size: 12px;
     padding: 15px;
   }
-  
+  .container{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    
+  }
+  .item{
+    width: 200px;
+    height: 200px;
+ 
+margin: 5px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0px 0px 10px black;
+transition: 1s;
+background-image: url(./bg\ image.jpg);
+  }
+  .item:hover{
+    transform: translateY(10px);
+  }
+
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
